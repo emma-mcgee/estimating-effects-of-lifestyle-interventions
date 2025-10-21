@@ -11,7 +11,7 @@ Date: March 6, 2023
 
 Purpose of Program: Run parametric g-formula for the the effect of a recommendation-based 
                     physical activity and dietary intervention on 20-year risk of mortality 
-                    Create figures for Figure S1 - model fit graphs
+                    Create figures for eFigure 3 - model fit graphs
 
 Statistical Analyses:
   Parametric g-formula
@@ -594,7 +594,7 @@ fixedcov = baseage baseage_spl1
     sample_end = -1,
 
     rungraphs = 1,             
-    graphfile=figure_s1_prostate.pdf,
+    graphfile=efigure_3_prostate.pdf,
     printlogstats = 1,
 
     numint=10
