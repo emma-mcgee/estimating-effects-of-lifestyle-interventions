@@ -9,7 +9,7 @@
 
 # Date: July 1, 2024
 
-# Purpose of Program: Create figure S3 (specific components of the joint intervention)
+# Purpose of Program: Create efigure 5 (specific components of the joint intervention)
 
 # Statistical Analyses: 
 #  None
@@ -29,7 +29,7 @@ setwd(main.dir)
 ##########################################################
 
 ### Prostate ###
-df_p <- read_excel("figure_s3_prostate.xlsx")
+df_p <- read_excel("efigure_5_prostate.xlsx")
 df_p <- df_p[is.na(df_p$Cancer) == FALSE,]
 
 # Transform to numeric and format
@@ -38,7 +38,7 @@ df_p$RD_LL <- as.numeric(df_p$RD_LL)
 df_p$RD_UL <- as.numeric(df_p$RD_UL)
 
 ### Breast ###
-df_b <- read_excel("figure_s3_breast.xlsx")
+df_b <- read_excel("efigure_5_breast.xlsx")
 df_b <- df_b[is.na(df_b$Cancer) == FALSE,]
 
 # Transform to numeric and format
@@ -81,6 +81,6 @@ warnings()
 
 
 # Create plot
-ggsave(filename=file.path(main.dir,"figure_s3.png"), device = "png", 
+ggsave(filename=file.path(main.dir,"efigure_5.png"), device = "png", 
        width = 7.5, height = 4.2, units = "in", 
        plot = plot_rd) 
