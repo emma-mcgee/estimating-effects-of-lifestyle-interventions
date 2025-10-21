@@ -93,7 +93,7 @@ run;
         noexp=T,
 	    varlist= baselineage white modact vigact act totfv totgrn junk totred totproc sodajuice totalc cal
 		bmi smkhx smk dia hbp chl fhxmi yeardx time_dx_base stage est_status hormtx chemotx radiotx mnp_predx pmh_predx_1,
-	    file = table_s4_nhs,
+	    file = etable_4_nhs,
 	    cat= white smkhx smk dia hbp chl fhxmi est_status hormtx chemotx radiotx mnp_predx pmh_predx_1,
 	    poly= stage ,
 		mdn= baselineage modact vigact act totfv totgrn junk totred totproc sodajuice totalc cal bmi yeardx time_dx_base,
