@@ -9,7 +9,7 @@
 
 # Date: July 1, 2024
 
-# Purpose of Program: Create figure S2 (means of BMI and fiber over time)
+# Purpose of Program: Create efigure 4 (means of BMI and fiber over time)
 
 # Statistical Analyses: 
 #  None
@@ -29,7 +29,7 @@ setwd(main.dir)
 ##########################################################
 
 ### Prostate ###
-df_p <- read_excel("figure_s2_prostate.xlsx")
+df_p <- read_excel("efigure_4_prostate.xlsx")
 df_p <- df_p[is.na(df_p$mean_bmi) == FALSE,]
 
 df_p$mean_bmi <- as.numeric(df_p$mean_bmi)
@@ -41,7 +41,7 @@ df_p$mean_fiber_ll <- as.numeric(df_p$mean_fiber_ll)
 
 
 ### Breast ###
-df_b <- read_excel("figure_s2_breast.xlsx")
+df_b <- read_excel("efigure_4_breast.xlsx")
 df_b <- df_b[is.na(df_b$mean_bmi) == FALSE,]
 
 df_b$mean_bmi <- as.numeric(df_b$mean_bmi)
@@ -89,7 +89,7 @@ plot_rd <- ggplot(data=df, aes(x=year, y=mean_bmi, ymin=mean_bmi_ll, ymax=mean_b
   labs(x="Year of follow-up", y=bquote("Body mass index, kg/m"^2)) 
 plot_rd
 
-ggsave(filename=file.path(main.dir,"figure_s2_bmi.png"), device = "png", 
+ggsave(filename=file.path(main.dir,"efigure_4_bmi.png"), device = "png", 
        width = 7.5, height = 3.1, units = "in", 
        plot = plot_rd) 
 
@@ -130,6 +130,6 @@ plot_rd <- ggplot(data=df, aes(x=year, y=mean_fiber, ymin=mean_fiber_ll, ymax=me
 plot_rd
 
 
-ggsave(filename=file.path(main.dir,"figure_s2_fiber.png"), device = "png", 
+ggsave(filename=file.path(main.dir,"efigure_4_fiber.png"), device = "png", 
        width = 7.5, height = 3.1, units = "in", 
        plot = plot_rd)
