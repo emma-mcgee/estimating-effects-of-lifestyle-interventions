@@ -1,0 +1,182 @@
+NOTE: Option OBS changed to 100.
+NOTE: Library RESULTS uses 1 concatenated paths.
+NOTE: DATA results.simsurv_0_100
+
+NOTE: Processing inline DATALINES (9 lines)
+
+NOTE: Read 9 rows from DATALINES.
+NOTE: Wrote results.simsurv_0_100 (9 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA results.simsurv_101_200
+
+NOTE: Processing inline DATALINES (6 lines)
+
+NOTE: Read 6 rows from DATALINES.
+NOTE: Wrote results.simsurv_101_200 (6 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA results.simsurv_201_300
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote results.simsurv_201_300 (3 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA results.simsurv_301_400
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote results.simsurv_301_400 (3 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA results.simsurv_401_500
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote results.simsurv_401_500 (3 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Library RESULTS uses 1 concatenated paths.
+NOTE: DATA simsurv
+
+
+NOTE: Read 9 rows from results.simsurv_0_100.
+NOTE: Read 15 rows from results.simsurv_101_200.
+NOTE: Read 18 rows from results.simsurv_201_300.
+NOTE: Read 21 rows from results.simsurv_301_400.
+NOTE: Read 24 rows from results.simsurv_401_500.
+NOTE: Wrote simsurv (24 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA forsurv
+
+
+NOTE: Read 24 rows from simsurv.
+NOTE: Wrote forsurv (24 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA nc
+
+
+NOTE: Read 24 rows from forsurv.
+NOTE: Wrote nc (88 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=nc
+
+NOTE: Read 88 rows from nc.
+NOTE: Wrote nc (88 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA nc0
+
+
+NOTE: Read 88 rows from nc.
+NOTE: Wrote nc0 (11 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC UNIVARIATE
+NOTE: Output dataset ncbounds has 11 observations and 3 variables.
+NOTE: DATA ncgraph
+
+NOTE: Stream 1 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote ncgraph (19 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA int1
+
+
+NOTE: Read 24 rows from forsurv.
+NOTE: Wrote int1 (88 rows, 16 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA int1_0
+
+
+NOTE: Read 88 rows from int1.
+NOTE: Wrote int1_0 (11 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=int1
+
+NOTE: Read 88 rows from int1.
+NOTE: Wrote int1 (88 rows, 16 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC UNIVARIATE
+NOTE: Output dataset int1bounds has 11 observations and 3 variables.
+NOTE: DATA int1graph
+
+NOTE: Stream 1 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote int1graph (19 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA int10
+
+
+NOTE: Read 24 rows from forsurv.
+NOTE: Wrote int10 (88 rows, 16 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA int10_0
+
+
+NOTE: Read 88 rows from int10.
+NOTE: Wrote int10_0 (11 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=int10
+
+NOTE: Read 88 rows from int10.
+NOTE: Wrote int10 (88 rows, 16 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC UNIVARIATE
+NOTE: Output dataset int10bounds has 11 observations and 3 variables.
+NOTE: DATA int10graph
+
+NOTE: Stream 1 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 11 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote int10graph (19 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA allgraphs
+
+NOTE: Stream 1 processed 19 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 19 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 3 processed 19 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote allgraphs (19 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA results.forgraphs_breast
+
+
+NOTE: Read 19 rows from allgraphs.
+NOTE: Wrote results.forgraphs_breast (19 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds

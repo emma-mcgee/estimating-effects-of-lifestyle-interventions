@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_figure_2_surv_data_breast",
+  "source_file": "tables_figures/figure_2_surv_data_breast.sas",
+  "source_blob_sha": "e5ed966e07da35a4be28951575f982c30cd7926c",
+  "source_commit": "de778c4d6330b4bd31495ba2d0e26bb19b117637",
+  "notes": "Reshapes bootstrap survival-curve output (surv0-surv10, wide->long over 11 time points) for three interventions (natural course, all WCRF/AICR recommendations, alcohol) and computes 2.5/97.5 percentile bounds via PROC UNIVARIATE, merged to per-time-point graph data. Only external dependency was five results.simsurv_* datasets; supplied deterministic mock inputs (columns surv0-surv10, int in {0,1,10}, _sample_) in autoexec.sas and redirected libname results '' -> (work) so the final save runs. Script logic (arrays, do-loops, where-filters, PROC SORT, PROC UNIVARIATE OUTPUT OUT= pctlpts, MERGE) unchanged."
+}
