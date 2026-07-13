@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-13T04:08:28+00:00",
+  "_captured_run_id": "r_2bf83824638f4bcfb08d4c0f1f339925",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote simsurv (24 rows, 13 columns).",
+    "NOTE: Wrote forsurv (24 rows, 13 columns).",
+    "NOTE: Wrote allgraphs (19 rows, 10 columns).",
+    "NOTE: Wrote results.forgraphs_breast (19 rows, 10 columns)."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
